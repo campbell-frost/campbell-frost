@@ -1,0 +1,39 @@
+<template>
+    <div class="d-flex align-items-center content pt-5 margin" id="landing-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="landing-title">Hi, I’m Campbell - A Full Stack Software Engineer.
+                    </h1>
+                    <p class="mt-4">
+                        I am a senior studying Computer Science at Francis Marion University and I have a passion for
+                        crafting
+                        digital solutions. <br /><br />
+                        During my software engineering journey I have aquired a skill set
+                        from front-end technologies like Next.js with React and Vue to back-end frameworks such as .NET with
+                        C#.
+                        <br /><br />
+                        I'm not just a programmer; I'm a problem solver, a collaborator, and a relentless learner.
+
+                    </p>
+                    <p>Contact me -
+                        <a class="email-link" href="mailto:campbellsfrost@gmail.com">campbellsfrost@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center margin-3">
+                    <img src="./assets/me_rock.png" class="img-fluid" alt="Picture of Campbell Frost">
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+.content {
+    font-family: CircularStd;
+}
+
+.margin{
+    margin-top: 40px;
+}
+</style>
