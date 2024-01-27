@@ -10,20 +10,34 @@ import About from './components/About.vue';
   </header>
 
   <main>
-    <About />
+    <div class=" top-padding">
+      <About />
+    </div>
   </main>
 </template>
 
 <style scoped>
 @font-face {
   font-family: "CircularStd";
-  src: local("CircularStd"), url(./fonts/circular-std-medium-500.ttf) format("truetype");
+  src: local("CircularStd"), url(./fonts/CircularStd-Medium.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "CircularStdBold";
+  src: local("CircularStdBold"), url(./fonts/CircularStd-Bold.ttf) format("truetype");
+}
 
+@font-face {
+  font-family: "CircularStdBlack";
+  src: local("CircularStdBlack"), url(./fonts/CircularStd-Black.ttf) format("truetype");
+}
 
-.underline{
-      border-bottom: 1px solid #000;
+.top-padding {
+  padding-top: 100px;
+}
+
+.underline {
+  border-bottom: 1px solid #000;
 
 }
 </style>
