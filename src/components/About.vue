@@ -12,11 +12,12 @@
                             crafting
                             digital solutions. <br /><br />
                             During my software engineering journey I have aquired a skill set
-                            from front-end technologies like Next.js with React and Vue to back-end frameworks such as .NET with
+                            from front-end technologies like Next.js with React and Vue to back-end frameworks such as .NET
+                            with
                             C#.
                             <br /><br />
                             I'm not just a programmer; I'm a problem solver, a collaborator, and a relentless learner.
-                            
+
                         </p>
                         <p>Contact me -
                             <a class="email-link" href="mailto:campbellsfrost@gmail.com">campbellsfrost@gmail.com</a>
@@ -41,7 +42,7 @@
 }
 
 .about-content {
-    font-family:  CircularStd;
+    font-family: CircularStd;
     font-weight: 800;
     font-size: 19pt;
 }
@@ -68,5 +69,11 @@
 .email-link,
 .landing-block p {
     font-weight: 300
+}
+
+.img-fluid {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 </style>
