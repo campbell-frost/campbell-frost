@@ -28,6 +28,7 @@
 <style scoped>
 #navigation {
     font-family: CircularStdBlack;
+    font-weight: 500;
     font-size: larger;
     border-bottom: 1px solid #000;
     background-color: white;
