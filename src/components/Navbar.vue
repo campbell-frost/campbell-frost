@@ -7,16 +7,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav align-items-center ms-auto">
-                    <a class="nav-item nav-link me-4" href="https://github.com/campbell-frost" target="__blank">Github
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link mx-3" href="https://github.com/campbell-frost" target="__blank">Github
                     </a>
-                    <a class="nav-item nav-link me-4" href="https://www.linkedin.com/in/campbell-frost-39656a207/"
+                    <a class="nav-item nav-link mx-3" href="https://www.linkedin.com/in/campbell-frost-39656a207/"
                         target="__blank">Linkedin
                     </a>
-                    <a class="nav-item nav-link me-4" href="https://www.instagram.com/campbell.frost/"
+                    <a class="nav-item nav-link mx-3" href="https://www.instagram.com/campbell.frost/"
                         target="__blank">Instagram
                     </a>
-                    <a href="mailto:campbellsfrost@gmail.com" class="btn btn-layered offset square me-4" role="button"
+                    <a class="btn btn-layered offset square mx-3" href="mailto:campbellsfrost@gmail.com" role="button"
                         aria-pressed="true">Contact Me
                     </a>
                 </div>
@@ -51,19 +51,25 @@
     font-family: CircularStd, sans-serif !important;
     font-size: 10pt;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1rem;
     padding: 10px 26px;
+    padding-top: 13px;
     transition: .1s ease-out;
     -webkit-transition: .1s ease-out;
     color: #000;
-
+    max-width: 140px;
 }
 
 .hamburger {
     max-width: 20px;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler {
+    outline: none;
     border: none;
+
+}
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 </style>
