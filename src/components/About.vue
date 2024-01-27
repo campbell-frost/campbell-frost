@@ -12,7 +12,7 @@
                             crafting
                             digital solutions. <br /><br />
                             During my software engineering journey I have aquired a skill set
-                            from front-end technologies like Next.js with React and Vue to back-end frameworks such as .NET
+                            with front-end technologies like Blazor, Vue and React as well as back-end frameworks such as .NET
                             with
                             C#.
                             <br /><br />
