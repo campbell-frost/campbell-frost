@@ -2,6 +2,8 @@
 
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
+import Technologies from './components/Technologies.vue';
+import Projects from './components/Projects.vue';
 </script>
 
 <template>
@@ -12,6 +14,8 @@ import About from './components/About.vue';
   <main>
     <div class=" top-padding">
       <About />
+      <Technologies />
+      <Projects />
     </div>
   </main>
 </template>

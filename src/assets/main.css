@@ -1,1 +1,7 @@
 @import './base.css';
+
+
+.section-title {
+    font-size: 22pt;
+    font-weight: 700
+}
