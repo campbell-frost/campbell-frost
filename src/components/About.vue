@@ -21,7 +21,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center margin-3">
-                    <img src="./assets/me_rock.png" class="img-fluid" alt="Picture of Campbell Frost">
+                    <img src="./images/me_rock.png" class="img-fluid" alt="Picture of Campbell Frost">
                 </div>
             </div>
         </div>

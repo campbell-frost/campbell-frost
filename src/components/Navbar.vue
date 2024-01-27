@@ -1,38 +1,36 @@
 <template>
-    <div class="navigation">
-        <div class="fixed-top" id="navigation">
-            <nav class="navbar navbar-expand-lg primary-nav container "><a aria-current="page"
-                    class="nav-item nav-link pl-5 text-xl-start" href="/" style="margin-left:14px;">Campbell Frost</a><button class="navbar-toggler"
-                    type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <img aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-                        class="hamburger fa-bars fa-w-14 " role="img" src="./images/Hamburger_icon.svg.png"
-                        viewBox="0 0 448 512"/>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar" style="margin-left:640px;">
-                    <div class="navbar-nav align-items-center"><a class="nav-item nav-link mr-4"
-                            href="https://github.com/campbell-frost" target="__blank">Github</a><a
-                            class="nav-item nav-link ml-4" href="https://www.linkedin.com/in/campbell-frost-39656a207/"
-                            target="__blank">Linkedin</a><a class="nav-item nav-link mr-4"
-                            href="https://www.instagram.com/campbell.frost/" target="__blank">Instagram</a><a
-                            href="mailto:campbellsfrost@gmail.com" class="btn btn-layered offset square mr-4" role="button"
-                            aria-pressed="true">Contact Me</a>
-                    </div>
+    <div class="fixed-top" id="navigation">
+        <nav class="navbar navbar-expand-lg primary-nav container my-1 bg-light">
+            <a aria-current="page" class="nav-item nav-link ps-3 me-4" href="/"><b>Campbell Frost</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav align-items-center ms-auto">
+                    <a class="nav-item nav-link me-4" href="https://github.com/campbell-frost" target="__blank">Github
+                    </a>
+                    <a class="nav-item nav-link me-4" href="https://www.linkedin.com/in/campbell-frost-39656a207/"
+                        target="__blank">Linkedin
+                    </a>
+                    <a class="nav-item nav-link me-4" href="https://www.instagram.com/campbell.frost/"
+                        target="__blank">Instagram
+                    </a>
+                    <a href="mailto:campbellsfrost@gmail.com" class="btn btn-layered offset square me-4" role="button"
+                        aria-pressed="true">Contact Me
+                    </a>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
 </template>
 
 <style scoped>
 #navigation {
+    font-family: CircularStd;
     border-bottom: 1px solid #000;
 }
 
-.navigation {
-    font-family: CircularStd;
-
-}
 .offset {
     box-shadow: .4em .3em 0 0 #000;
     border-radius: 0px;
@@ -45,6 +43,7 @@
     text-decoration: none;
     border-radius: 0px;
 }
+
 .btn-layered {
     background: none;
     border: 2px solid #000;
@@ -59,4 +58,11 @@
 
 }
 
+.hamburger {
+    max-width: 20px;
+}
+
+.navbar-toggler-icon{
+    border: none;
+}
 </style>
