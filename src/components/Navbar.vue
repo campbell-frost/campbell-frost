@@ -1,6 +1,6 @@
 <template>
     <div class="fixed-top" id="navigation">
-        <nav class="navbar navbar-expand-lg primary-nav container my-1 bg-light">
+        <nav class="navbar navbar-expand-lg primary-nav container my-1">
             <a aria-current="page" class="nav-item nav-link ps-3 me-4" href="/">Campbell Frost</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +30,7 @@
     font-family: CircularStdBlack;
     font-size: larger;
     border-bottom: 1px solid #000;
+    background-color: white;
 }
 
 .offset {
