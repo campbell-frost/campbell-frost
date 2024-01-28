@@ -1,7 +1,7 @@
 <template>
     <div class="fixed-top" id="navigation">
         <nav class="navbar navbar-expand-lg primary-nav container my-1">
-            <a aria-current="page" class="nav-item nav-link ps-3 me-4" href="/">Campbell Frost</a>
+            <a aria-current="page" class="nav-item nav-link ps-3 me-4 primary" href="/">Campbell Frost</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,9 +28,13 @@
 <style scoped>
 #navigation {
     font-weight: 500;
-    font-size: xx-large;
+    font-size: x-large;
     border-bottom: 1px solid #000;
     background-color: white;
+}
+
+.primary{
+    font-weight: 800;
 }
 
 .offset {
