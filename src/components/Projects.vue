@@ -22,15 +22,16 @@
             <div class="modal-dialog d-flex justify-content-center">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="projectModalLabel" v-if="selectedProject">{{ selectedProject.title }}
-                        </h5>
+                        <h3 class="modal-title" id="projectModalLabel" v-if="selectedProject">{{ selectedProject.title }}
+                        </h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body" v-if="selectedProject">
-                        <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
-                        <hr/>
-                        <p>{{ selectedProject.description }}</p>
+                        <div class="img-box-modal">
+                            <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
+                        </div>
+                        <h3 class="description">{{ selectedProject.description }}</h3>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-layered offset square" data-bs-dismiss="modal">Close</button>
@@ -113,27 +114,56 @@ export default {
 .project-box:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #757575;
-
+    
 }
 
 .project-box:hover .info {
     color: white;
+    
+}
 
+h3, h2{
+    font-weight: 600;
+
+}
+
+.description{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px black solid;
+}
+
+.modal-footer{
+    border-top: none;
+}
+.img-fluid{
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
 }
 
 .modal-content,
 .modal-dialog {
-    min-width: 1000px;
+    min-width: 800px;
+}
+
+.modal-body{
+    padding: 0px;
 }
 
 @media (max-width: 1250px) {
-    .modal-content, .modal-dialog {
+    
+    .modal-content,
+    .modal-dialog {
         min-width: 500px;
     }
 }
 
 @media (max-width: 500px) {
-    .modal-content, .modal-dialog {
+    
+    .modal-content,
+    .modal-dialog {
         min-width: 350px;
     }
 }
@@ -149,15 +179,16 @@ export default {
     color: #000;
     max-width: 140px;
 }
+
 .offset {
     box-shadow: .4em .3em 0 0 #000;
     border-radius: 0px;
 }
+
 .offset:focus,
 .offset:hover {
     box-shadow: 0 0 0 0 #42776a;
     color: #000;
     text-decoration: none;
     border-radius: 0px;
-}
-</style>
+}</style>
