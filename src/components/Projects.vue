@@ -31,7 +31,7 @@
                         <div class="img-box-modal">
                             <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
                         </div>
-                        <h3 class="description">{{ selectedProject.description }}</h3>
+                        <h3 class="description py-3 px-4">{{ selectedProject.description }}</h3>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-layered offset square" data-bs-dismiss="modal">Close</button>
@@ -128,10 +128,6 @@ h3, h2{
 }
 
 .description{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     border-bottom: 1px black solid;
 }
 
