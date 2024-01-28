@@ -5,3 +5,7 @@
     font-size: 22pt;
     font-weight: 700
 }
+
+.container{
+    max-width: 1000px;
+}

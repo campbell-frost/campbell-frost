@@ -3,23 +3,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="landing-title">Hi, I’m Campbell - A Full Stack Software Engineer.
-                    </h1>
+                    <h5 class="about-content-small">Hi, I’m Campbell
+                    </h5>
                     <div class="mb-5">
 
-                        <p class="mt-4 about-content">
-                            I am a senior studying Computer Science at Francis Marion University and I have a passion for
-                            crafting
-                            digital solutions. <br /><br />
-                            During my software engineering journey I have aquired a skill set
-                            with front-end technologies like Blazor, Vue and React as well as back-end frameworks such as .NET
-                            with
-                            C#.
-                            <br /><br />
-                            I'm not just a programmer; I'm a problem solver, a collaborator, and a relentless learner.
+                        <h1 class="mt-4 about-content mb-5">
+                            I have a passion for crafting digital solutions
 
-                        </p>
-                        <p class="about-content">Contact me -
+                        </h1>
+                        <p class="about-content-small">Contact me -
                             <a class="email-link" href="mailto:campbellsfrost@gmail.com">campbellsfrost@gmail.com</a>
                         </p>
                     </div>
@@ -34,14 +26,16 @@
 
 <style scoped>
 
+
+.about-content-small{
+    font-weight: 600;
+    font-size: 30px;
+}
 .about-content {
     font-weight: 600;
-    font-size: 22pt;
+    font-size: 52pt;
 }
 
-.margin {
-    margin-top: 40px;
-}
 
 .email-link {
     padding-bottom: 3px;
@@ -57,6 +51,10 @@
     background-color: #000;
     color: #fff
 }
+.margin {
+    margin-top: 40px;
+}
+
 
 
 
@@ -66,7 +64,4 @@
     object-fit: contain;
 }
 
-.landing-title{
-    font-weight: 700;
-}
 </style>
