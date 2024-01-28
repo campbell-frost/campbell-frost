@@ -3,7 +3,7 @@
         <h2 class="section-title pb-4">Technologies</h2>
         <div class="row align-content-center text-center">
             <div v-for="(tech, index) in techList" :key="index" class="col-md-3 col-6 my-5">
-                <img class="tech-icon tilt mx-auto" :src="tech.image" @mousemove="handleMove" @mouseout="handleMouseOut"
+                <img class="tech-icon tilt mx-auto img-box" :src="tech.image" @mousemove="handleMove" @mouseout="handleMouseOut"
                     @mousedown="handleMouseDown" @mouseup="handleMouseUp" />
             </div>
         </div>
@@ -35,10 +35,14 @@ export default {
             const el = e.target;
             const height = el.clientHeight;
             const width = el.clientWidth;
-            const xVal = e.layerX;
-            const yVal = e.layerY;
-            const yRotation = 80 * ((xVal - width / 2) / width);
-            const xRotation = -80 * ((yVal - height / 2) / height);
+
+            // Calculate the tilt based on the position of the mouse within a larger area
+            const xVal = e.offsetX || e.layerX || 0;
+            const yVal = e.offsetY || e.layerY || 0;
+
+            const yRotation = 120 * ((xVal - width / 2) / width);
+            const xRotation = -120 * ((yVal - height / 2) / height);
+
             const string = `perspective(500px) scale(1.3) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
             el.style.transform = string;
         },
@@ -60,9 +64,9 @@ export default {
 
 <style scoped>
 .tech-icon {
-    width: 120px;
-    height: 120px;
-
+    width: 180px;
+    height: 180px;
+    transition: transform 0.1s ;
 }
 
 
