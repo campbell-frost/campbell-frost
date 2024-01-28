@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex align-items-center content margin" id="landing-top">
+    <div class="d-flex align-items-center content margin " id="landing-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -33,16 +33,8 @@
 </template>
 
 <style scoped>
-.landing-title {
-    font-family: CircularStdBlack;
-}
-
-.landing-content {
-    font-family: CircularStd;
-}
 
 .about-content {
-    font-family: CircularStd;
     font-weight: 800;
     font-size: 19pt;
 }
