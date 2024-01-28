@@ -21,11 +21,12 @@
         <div class="modal" ref="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
             <div class="modal-dialog d-flex justify-content-center">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header border-bottom">
                         <h5 class="modal-title" id="projectModalLabel" v-if="selectedProject">{{ selectedProject.title }}
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    
                     <div class="modal-body" v-if="selectedProject">
                         <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
                         <p>{{ selectedProject.description }}</p>
