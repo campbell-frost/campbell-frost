@@ -1,9 +1,9 @@
 <template>
     <div class="fixed-top" id="navigation">
         <nav class="navbar navbar-expand-lg primary-nav container my-1">
-            <div class="ps-3 ">
-                <a aria-current="page" class="nav-item nav-link me-4 primary" href="/">Campbell Frost</a>
-            </div>
+        
+                <a aria-current="page" class="nav-item nav-link mx-3 py-1 primary" href="/">Campbell Frost</a>
+        
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
