@@ -27,7 +27,6 @@
 
 <style scoped>
 #navigation {
-    font-family: CircularStdBlack;
     font-weight: 500;
     font-size: larger;
     border-bottom: 1px solid #000;
@@ -50,7 +49,6 @@
 .btn-layered {
     background: none;
     border: 2px solid #000;
-    font-family: CircularStd, sans-serif !important;
     font-size: 10pt;
     font-weight: 500;
     line-height: 1rem;

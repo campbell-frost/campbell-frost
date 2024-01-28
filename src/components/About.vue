@@ -35,8 +35,8 @@
 <style scoped>
 
 .about-content {
-    font-weight: 800;
-    font-size: 19pt;
+    font-weight: 900;
+    font-size: 22pt;
 }
 
 .margin {
