@@ -13,6 +13,7 @@
                             <p>{{ project.company }}</p>
                         </div>
                         <img :src="project.image" class="img-box" alt="Project Image">
+                                                    
                     </div>
                 </div>
             </div>
@@ -49,21 +50,21 @@ export default {
                     id: 1,
                     title: 'Sign Me In',
                     company: 'Florence Darlingon Technical College',
-                    image: './src/components/images/projects/sign-me-in.png',
+                    image: './images/sign-me-in.png',
                     description: 'Sign-Me-In is a full stack web app designed for the Florence Darlington Technical College to aid tutors in the Math Hub sign students in more efficiently, and to give managers the ability to generate reports, view graphs, and edit employee and account info.The project was developed using Blazor on .NET 8, Azure SQL, VS- Code, and GitHub in an Agile / Scrum environment.',
                 },
                 {
                     id: 2,
                     title: 'Morgue Tracker',
                     company: 'McLeod Health',
-                    image: './src/components/images/projects/mcleodHealth.jpg',
+                    image: './images/mcleodHealth.png',
                     description: 'Morgue Tracker is a mobile friendly full stack web app intended for employees at the McLeod morgue to streamline the intake and release process for cadavers, and to ensure that the cadaver is released to the correct funeral home.The app was developed during an internship using ASP.NET MVC, GitHub, and Visual Studio.',
                 },
                 {
                     id: 3,
                     title: 'Bossy Books',
                     company: 'Francis Marion University',
-                    image: './src/components/images/projects/bossybooks.png',
+                    image: './images/bossybooks.png',
                     description: 'Bossy Books is a full stack web app made with Next.js and React that allows small businesses to manage customer and invoice information.',
                 },
             ],
