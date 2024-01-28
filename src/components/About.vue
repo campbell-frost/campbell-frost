@@ -68,4 +68,9 @@
     width: 100%;
     object-fit: contain;
 }
+
+.landing-title{
+    font-weight: 700;
+    font-size: larger;
+}
 </style>
