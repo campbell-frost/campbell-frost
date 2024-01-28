@@ -53,8 +53,6 @@
 .btn-layered {
     background: none;
     border: 2px solid #000;
-    font-size: 10pt;
-    font-weight: 500;
     line-height: 1rem;
     padding: 10px 26px;
     padding-top: 13px;
