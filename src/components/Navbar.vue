@@ -28,7 +28,7 @@
 <style scoped>
 #navigation {
     font-weight: 500;
-    font-size: larger;
+    font-size: xx-large;
     border-bottom: 1px solid #000;
     background-color: white;
 }
