@@ -5,9 +5,9 @@
                 <div class="col-md-6">
                     <h1 class="landing-title">Hi, I’m Campbell - A Full Stack Software Engineer.
                     </h1>
-                    <div class="about-content mb-5">
+                    <div class="mb-5">
 
-                        <p class="mt-4">
+                        <p class="mt-4 about-content">
                             I am a senior studying Computer Science at Francis Marion University and I have a passion for
                             crafting
                             digital solutions. <br /><br />
@@ -19,7 +19,7 @@
                             I'm not just a programmer; I'm a problem solver, a collaborator, and a relentless learner.
 
                         </p>
-                        <p>Contact me -
+                        <p class="about-content">Contact me -
                             <a class="email-link" href="mailto:campbellsfrost@gmail.com">campbellsfrost@gmail.com</a>
                         </p>
                     </div>
@@ -35,7 +35,7 @@
 <style scoped>
 
 .about-content {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 22pt;
 }
 
@@ -58,10 +58,7 @@
     color: #fff
 }
 
-.email-link,
-.landing-block p {
-    font-weight: 300
-}
+
 
 .img-fluid {
     height: 100%;
