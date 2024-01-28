@@ -1,9 +1,7 @@
 <template>
     <div>
         <div class="container mt-4">
-            <div class="section-title pb-4">
-                <h2>Projects</h2>
-            </div>
+            <h2 class="section-title pb-4">Projects</h2>
             <div class="row">
                 <div class="col-md-6" v-for="project in projects" :key="project.id">
                     <div class="project-box" @click="openModal(project)">
@@ -20,23 +18,24 @@
         </div>
 
         <!-- Modal -->
-    <div class="modal" ref="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-        <div class="modal-dialog d-flex justify-content-center">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModalLabel" v-if="selectedProject">{{ selectedProject.title }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" v-if="selectedProject">
-                    <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
-                    <p>{{ selectedProject.description }}</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal" ref="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex justify-content-center">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel" v-if="selectedProject">{{ selectedProject.title }}
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" v-if="selectedProject">
+                        <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
+                        <p>{{ selectedProject.description }}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
 </template>
@@ -106,7 +105,6 @@ export default {
 
 .info {
     color: #b3b3b3;
-    font-family: CircularStdBold;
     transition: color 0.3s;
 }
 
@@ -121,11 +119,9 @@ export default {
 
 }
 
-.modal-content, .modal-dialog {
+.modal-content,
+.modal-dialog {
     width: 1000px;
 }
 
-.section-title {
-    font-family: CircularStdBold;
-}
 </style>
