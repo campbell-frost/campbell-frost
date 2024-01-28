@@ -60,7 +60,7 @@ export default {
                     title: 'Morgue Tracker',
                     company: 'McLeod Health',
                     image: './images/mcleodHealth.png',
-                    description: 'Morgue Tracker is a mobile friendly full stack web app intended for employees at the McLeod morgue to streamline the intake and release process for cadavers, and to ensure that the cadaver is released to the correct funeral home.The app was developed during an internship using ASP.NET MVC, GitHub, and Visual Studio.',
+                    description: 'Morgue Tracker is a mobile friendly full stack web app intended for employees at the McLeod morgue to streamline the intake and release process for cadavers, and to ensure that the cadaver is released to the correct funeral home.  The app was developed during an internship using ASP.NET MVC, GitHub, and Visual Studio.',
                 },
                 {
                     id: 3,
