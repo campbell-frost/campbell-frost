@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container pt-5">
         <h2 class="section-title pb-4">Technologies</h2>
         <div class="row align-content-center text-center">
             <div v-for="(tech, index) in techList" :key="index" class="col-md-3 col-6 my-5">

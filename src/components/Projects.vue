@@ -121,7 +121,7 @@ export default {
     
 }
 
-h3, h2{
+h3{
     font-weight: 600;
 
 }
