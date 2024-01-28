@@ -5,6 +5,7 @@
             <div v-for="(tech, index) in techList" :key="index" class="col-md-3 col-6 my-5">
                 <img class="tech-icon tilt mx-auto" :src="tech.image" @mousemove="handleMove" @mouseout="handleMouseOut"
                     @mousedown="handleMouseDown" @mouseup="handleMouseUp" />
+
             </div>
         </div>
     </div>
@@ -61,32 +62,7 @@ export default {
 
 }
 
-.tech-icon2 {
-    width: 95px;
-    height: 80px;
 
-}
-
-.tech-icon3 {
-    width: 80px;
-    height: 90px;
-
-}
-
-.tech-icon,
-.tech-icon2,
-.tech-icon3 {
-    display: block;
-
-    margin: 0 auto;
-    transition: box-shadow 0.1s, transform 0.1s;
-}
-
-.tech-icon:hover,
-.tech-icon2:hover,
-.tech-icon3:hover {
-    cursor: pointer;
-}
 
 .img {
     display: block;
