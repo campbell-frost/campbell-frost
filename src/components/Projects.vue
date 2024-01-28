@@ -32,7 +32,7 @@
                         <p>{{ selectedProject.description }}</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-layered offset square" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -135,5 +135,28 @@ export default {
     .modal-content, .modal-dialog {
         min-width: 350px;
     }
+}
+
+.btn-layered {
+    background: none;
+    border: 2px solid #000;
+    line-height: 1rem;
+    padding: 10px 26px;
+    padding-top: 13px;
+    transition: .1s ease-out;
+    -webkit-transition: .1s ease-out;
+    color: #000;
+    max-width: 140px;
+}
+.offset {
+    box-shadow: .4em .3em 0 0 #000;
+    border-radius: 0px;
+}
+.offset:focus,
+.offset:hover {
+    box-shadow: 0 0 0 0 #42776a;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0px;
 }
 </style>
