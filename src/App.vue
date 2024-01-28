@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Technologies from './components/Technologies.vue';
 import Projects from './components/Projects.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -18,6 +19,9 @@ import Projects from './components/Projects.vue';
       <Projects />
     </div>
   </main>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <style scoped>
@@ -43,5 +47,11 @@ import Projects from './components/Projects.vue';
 .underline {
   border-bottom: 1px solid #000;
 
+}
+
+footer {
+  padding-top: 5px;
+  font-weight: bold;
+  border-top: 1px solid black;
 }
 </style>
