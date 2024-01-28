@@ -8,14 +8,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-item nav-link mx-3" href="https://github.com/campbell-frost" target="__blank">Github
-                    </a>
-                    <a class="nav-item nav-link mx-3" href="https://www.linkedin.com/in/campbell-frost-39656a207/"
-                        target="__blank">Linkedin
-                    </a>
-                    <a class="nav-item nav-link mx-3" href="https://www.instagram.com/campbell.frost/"
-                        target="__blank">Instagram
-                    </a>
+                    <div class="nav">
+
+                        <a class="nav-item nav-link mx-3" href="https://github.com/campbell-frost" target="__blank">Github
+                        </a>
+                        <a class="nav-item nav-link mx-3" href="https://www.linkedin.com/in/campbell-frost-39656a207/"
+                            target="__blank">Linkedin
+                        </a>
+                        <a class="nav-item nav-link mx-3" href="https://www.instagram.com/campbell.frost/"
+                            target="__blank">Instagram
+                        </a>
+                    </div>
                     <a class="btn btn-layered offset square mx-3" href="mailto:campbellsfrost@gmail.com" role="button"
                         aria-pressed="true">Contact Me
                     </a>
@@ -33,7 +36,7 @@
     background-color: white;
 }
 
-.primary{
+.primary {
     font-weight: 600;
 }
 
@@ -44,7 +47,7 @@
 
 .offset:focus,
 .offset:hover {
-    box-shadow: 0 0 0 0 #42776a;
+    box-shadow: 0 0 0 0 #000000;
     color: #000;
     text-decoration: none;
     border-radius: 0px;
@@ -71,7 +74,61 @@
     border: none;
 
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     box-shadow: none;
+}
+
+
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: rgba(0, 0, 0);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #000000;
+    border-left: 3px solid #000000;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #000000;
 }
 </style>
