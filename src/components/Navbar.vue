@@ -2,7 +2,7 @@
     <div class="fixed-top" id="navigation">
         <nav class="navbar navbar-expand-lg primary-nav container my-1">
         
-                <a aria-current="page" class="nav-item nav-link mx-3 py-1 primary" href="/">Campbell Frost</a>
+                <a aria-current="page" class="nav-item nav-link mx-3 py-2 primary" href="/">Campbell Frost</a>
         
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,6 +82,8 @@
 
 .nav-link {
     border-bottom: 2px solid white;
+    color: black;
+    font-weight: 600;
 }
 
 .nav-link:hover,

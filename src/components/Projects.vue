@@ -89,12 +89,11 @@ export default {
 /* Add your custom styles for project boxes if needed */
 .project-box {
     cursor: pointer;
-    border: 1px solid #b3b3b3;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     padding-top: 50px;
-    background-color: #b3b3b3;
+    background-color: #bfbfbf;
     border-radius: 8px;
     margin-bottom: 20px;
     transition: box-shadow 0.3s, background-color 0.3s;
@@ -107,13 +106,13 @@ export default {
 }
 
 .info {
-    color: #b3b3b3;
+    color: #bfbfbf;
     transition: color 0.3s;
 }
 
 .project-box:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #757575;
+    background-color: #868686;
     
 }
 
@@ -183,7 +182,7 @@ h3, h2{
 
 .offset:focus,
 .offset:hover {
-    box-shadow: 0 0 0 0 #42776a;
+    box-shadow: 0 0 0 0 #000000;
     color: #000;
     text-decoration: none;
     border-radius: 0px;
