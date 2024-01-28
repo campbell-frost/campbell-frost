@@ -26,7 +26,7 @@
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    
+
                     <div class="modal-body" v-if="selectedProject">
                         <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
                         <p>{{ selectedProject.description }}</p>
@@ -125,4 +125,15 @@ export default {
     min-width: 1000px;
 }
 
+@media (max-width: 1250px) {
+    .modal-content, .modal-dialog {
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal-content, .modal-dialog {
+        min-width: 350px;
+    }
+}
 </style>
