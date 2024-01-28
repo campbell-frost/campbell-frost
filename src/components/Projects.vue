@@ -122,7 +122,7 @@ export default {
 
 .modal-content,
 .modal-dialog {
-    width: 1000px;
+    min-width: 1000px;
 }
 
 </style>
