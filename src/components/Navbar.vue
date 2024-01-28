@@ -20,7 +20,7 @@
                         </a>
                     </div>
                     <a class="btn btn-layered offset square mx-3" href="mailto:campbellsfrost@gmail.com" role="button"
-                        aria-pressed="true">Contact Me
+                        aria-pressed="true">Email Me
                     </a>
                 </div>
             </div>
