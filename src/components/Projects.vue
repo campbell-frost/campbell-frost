@@ -19,26 +19,25 @@
 
         <!-- Modal -->
         <div class="modal" ref="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-            <div class="modal-dialog d-flex justify-content-center">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="projectModalLabel" v-if="selectedProject">{{ selectedProject.title }}
-                        </h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
                     <div class="modal-body" v-if="selectedProject">
                         <div class="img-box-modal">
+                            <button type="button" class="btn btn-close close-button"
+                                data-bs-dismiss="modal"></button>
                             <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
                         </div>
-                        <h3 class="description py-3 px-4">{{ selectedProject.description }}</h3>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-layered offset square" data-bs-dismiss="modal">Close</button>
+                        <div class="description py-3 px-4">
+                            <h5 id="projectModalLabel" class="pb-2" v-if="selectedProject">{{ selectedProject.company }}
+                            </h5>
+                            <h3 class="pb-3">{{ selectedProject.title }}</h3>
+                            <h4>{{ selectedProject.description }}</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </div>
 </template>
@@ -53,7 +52,7 @@ export default {
                     title: 'Sign Me In',
                     company: 'Florence Darlingon Technical College',
                     image: './images/sign-me-in.png',
-                    description: 'Sign-Me-In is a full stack web app designed for the Florence Darlington Technical College to aid tutors in the Math Hub sign students in more efficiently, and to give managers the ability to generate reports, view graphs, and edit employee and account info.The project was developed using Blazor on .NET 8, Azure SQL, VS- Code, and GitHub in an Agile / Scrum environment.',
+                    description: 'A full stack web app made during my Capstone designed for the Florence Darlington Technical College to aid tutors in the Math Hub sign students in more efficiently, and to give managers the ability to generate reports, view graphs, and edit employee and account info.The project was developed using Blazor on .NET 8, Azure SQL, VS- Code, and GitHub in an Agile / Scrum environment.',
                 },
                 {
                     id: 2,
@@ -113,42 +112,51 @@ export default {
 .project-box:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #868686;
-    
+
+}
+
+.img-box-modal {
+    padding: 100px;
+    background-color: #eeeeee;
+    position:relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
 }
 
 .project-box:hover .info {
     color: white;
-    
+
 }
 
-h3{
+h3 {
     font-weight: 600;
 
 }
 
-.description{
-    border-bottom: 1px black solid;
-}
 
-.modal-footer{
+.modal-footer {
     border-top: none;
-}
-.img-fluid{
-    border-bottom: 1px black solid;
-    border-top: 1px black solid;
 }
 
 .modal-content,
-.modal-dialog {
+.modal-dialog, .modal-body {
     min-width: 800px;
+    border-radius: 4px;
 }
 
-.modal-body{
+.modal-body {
     padding: 0px;
 }
 
 @media (max-width: 1250px) {
-    
+
     .modal-content,
     .modal-dialog {
         min-width: 500px;
@@ -156,34 +164,11 @@ h3{
 }
 
 @media (max-width: 500px) {
-    
+
     .modal-content,
     .modal-dialog {
         min-width: 350px;
     }
 }
 
-.btn-layered {
-    background: none;
-    border: 2px solid #000;
-    line-height: 1rem;
-    padding: 10px 26px;
-    padding-top: 13px;
-    transition: .1s ease-out;
-    -webkit-transition: .1s ease-out;
-    color: #000;
-    max-width: 140px;
-}
-
-.offset {
-    box-shadow: .4em .3em 0 0 #000;
-    border-radius: 0px;
-}
-
-.offset:focus,
-.offset:hover {
-    box-shadow: 0 0 0 0 #000000;
-    color: #000;
-    text-decoration: none;
-    border-radius: 0px;
-}</style>
+</style>
