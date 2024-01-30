@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-5 d-flex justify-content-center margin-3">
-                    <img src="./images/me_rock.png" class="img-fluid" alt="Picture of Campbell Frost">
+                    <img src="./images/me_rock.png" class="img-fluid border-radius" alt="Picture of Campbell Frost">
                 </div>
             </div>
         </div>
@@ -35,7 +35,6 @@
     font-weight: 600;
     font-size: 52pt;
 }
-
 
 .email-link {
     padding-bottom: 3px;
@@ -55,13 +54,16 @@
     margin-top: 40px;
 }
 
-
-
+.border-radius{
+    border-radius: 8px;
+}
 
 .img-fluid {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 8px;
 }
+
 
 </style>
