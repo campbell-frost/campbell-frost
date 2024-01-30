@@ -79,6 +79,6 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 </style>
