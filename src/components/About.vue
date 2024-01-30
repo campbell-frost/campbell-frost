@@ -6,10 +6,8 @@
                     <h5 class="about-content-small">Hi, I’m Campbell
                     </h5>
                     <div class="mb-5">
-
                         <h1 class="mt-4 about-content mb-5">
                             I am full stack software engineer with a passion for crafting digital solutions
-
                         </h1>
                         <p class="about-content-small">Contact me -
                             <a class="email-link" href="mailto:campbellsfrost@gmail.com">campbellsfrost@gmail.com</a>
