@@ -164,9 +164,9 @@ h3 {
     }
 
     .project-box {
-        padding-left: 90px;
-        padding-right: 90px;
-        padding-bottom: 90px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 80px;
         padding-top: 0px;
     }
 
@@ -180,7 +180,12 @@ h3 {
     .modal-dialog {
         min-width: 350px;
     }
-
+ .project-box {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 70px;
+        padding-top: 0px;
+    }
 
 }
 </style>
