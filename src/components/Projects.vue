@@ -164,9 +164,9 @@ h3 {
     }
 
     .project-box {
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 60px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-bottom: 90px;
         padding-top: 0px;
     }
 
@@ -181,11 +181,6 @@ h3 {
         min-width: 350px;
     }
 
-    .project-box {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-top: 0px;
-    }
+
 }
 </style>
