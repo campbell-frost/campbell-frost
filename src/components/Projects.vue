@@ -93,7 +93,7 @@ export default {
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: #bfbfbf;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 20px;
     transition: box-shadow 0.3s, background-color 0.3s;
 }

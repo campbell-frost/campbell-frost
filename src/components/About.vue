@@ -6,7 +6,7 @@
                     <h5 class="about-content-small">Hi, I’m Campbell
                     </h5>
                     <div class="mb-5">
-                        <h1 class="mt-4 about-content mb-5">
+                        <h1 class="my-5 about-content">
                             I am full stack software engineer with a passion for crafting digital solutions
                         </h1>
                         <p class="about-content-small">Contact me -
@@ -23,16 +23,34 @@
 </template>
 
 <style scoped>
-
-
-.about-content-small{
+.about-content-small {
     font-weight: 600;
     font-size: 30px;
 }
+
 .about-content {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 52pt;
 }
+@media (max-width: 1400px) {
+    .about-content {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-content {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-content {
+        font-size: 34px;
+        font-weight: 700;
+    }
+}
+
 
 .email-link {
     padding-bottom: 3px;
@@ -48,11 +66,12 @@
     background-color: #000;
     color: #fff
 }
+
 .margin {
     margin-top: 40px;
 }
 
-.border-radius{
+.border-radius {
     border-radius: 8px;
 }
 
@@ -62,6 +81,4 @@
     object-fit: contain;
     border-radius: 8px;
 }
-
-
 </style>
