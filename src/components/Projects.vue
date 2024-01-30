@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-6" v-for="project in projects" :key="project.id">
                     <div class="project-box" @click="openModal(project)">
-                        <div class="info">
+                        <div class=" pt-3 info">
 
                             <h3>{{ project.title }}</h3>
                             <p>{{ project.company }}</p>
@@ -23,8 +23,7 @@
                 <div class="modal-content">
                     <div class="modal-body" v-if="selectedProject">
                         <div class="img-box-modal">
-                            <button type="button" class="btn btn-close close-button"
-                                data-bs-dismiss="modal"></button>
+                            <button type="button" class="btn btn-close close-button" data-bs-dismiss="modal"></button>
                             <img :src="selectedProject.image" class="img-fluid" alt="Project Image">
                         </div>
                         <div class="description py-3 px-4">
@@ -118,7 +117,7 @@ export default {
 .img-box-modal {
     padding: 100px;
     background-color: #eeeeee;
-    position:relative;
+    position: relative;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -140,13 +139,13 @@ h3 {
 
 }
 
-
 .modal-footer {
     border-top: none;
 }
 
 .modal-content,
-.modal-dialog, .modal-body {
+.modal-dialog,
+.modal-body {
     min-width: 800px;
     border-radius: 4px;
 }
@@ -161,6 +160,15 @@ h3 {
     .modal-dialog {
         min-width: 500px;
     }
+
+    .project-box {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        padding-top: 0px;
+    }
+
+
 }
 
 @media (max-width: 500px) {
@@ -169,6 +177,12 @@ h3 {
     .modal-dialog {
         min-width: 350px;
     }
-}
 
+    .project-box {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+}
 </style>
