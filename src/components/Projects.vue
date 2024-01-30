@@ -120,6 +120,7 @@ export default {
     position: relative;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    margin-right: 2px;
 }
 
 .close-button {
@@ -157,6 +158,7 @@ h3 {
 @media (max-width: 1250px) {
 
     .modal-content,
+    .modal-body,
     .modal-dialog {
         min-width: 500px;
     }
@@ -174,6 +176,7 @@ h3 {
 @media (max-width: 500px) {
 
     .modal-content,
+    .modal-body,
     .modal-dialog {
         min-width: 350px;
     }
