@@ -7,7 +7,7 @@
                     </h5>
                     <div class="mb-5">
                         <h1 class="my-5 about-content">
-                            I am full stack software engineer with a passion for crafting digital solutions
+                            I am a full stack software engineer with a passion for crafting digital solutions
                         </h1>
                         <p class="about-content-small">Contact me -
                             <a class="email-link" href="mailto:campbellsfrost@gmail.com">campbellsfrost@gmail.com</a>
