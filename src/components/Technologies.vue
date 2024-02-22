@@ -25,7 +25,8 @@ export default {
                 { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeiJDfQOd-oRPt58qz2Nj0d1kcARYg-BTBvA&usqp=CAU" },
                 { image: "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png" },
                 { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" },
-                { image: "https://149765861.v2.pressablecdn.com/wp-content/uploads/2020/01/devops.png" },
+                { image: "https://www.oraylis.de/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/06/azure-devops-logo.png.webp" },
+                { image: "https://icon2.cleanpng.com/20180517/fxw/kisspng-java-programmer-computer-programming-logo-5afe2f1d9e22d0.3056800815266076456477.jpg" },
             ],
         };
     },
