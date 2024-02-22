@@ -26,7 +26,7 @@ export default {
                 { image: "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png" },
                 { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" },
                 { image: "https://www.oraylis.de/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/06/azure-devops-logo.png.webp" },
-                { image: "https://icon2.cleanpng.com/20180517/fxw/kisspng-java-programmer-computer-programming-logo-5afe2f1d9e22d0.3056800815266076456477.jpg" },
+                { image: "https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/14a86d0f-651e-4efd-2d55-65b123378e00/preview" },
             ],
         };
     },
