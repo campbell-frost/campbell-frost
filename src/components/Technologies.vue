@@ -22,10 +22,10 @@ export default {
                 { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1024px-Microsoft_.NET_logo.svg.png" },
                 { image: "https://cdn.worldvectorlogo.com/logos/next-js.svg" },
                 { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png" },
+                { image: "https://www.oraylis.de/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/06/azure-devops-logo.png.webp" },
                 { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeiJDfQOd-oRPt58qz2Nj0d1kcARYg-BTBvA&usqp=CAU" },
                 { image: "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png" },
                 { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" },
-                { image: "https://www.oraylis.de/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/06/azure-devops-logo.png.webp" },
                 { image: "https://www.shareicon.net/data/512x512/2016/09/23/833700_windows_512x512.png" },
             ],
         };
@@ -68,8 +68,6 @@ export default {
     height: 180px;
     transition: transform 0.1s;
 }
-
-
 
 .img {
     display: block;
