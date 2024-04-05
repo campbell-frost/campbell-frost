@@ -11,8 +11,8 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="fixed top-0 left-0 right-0 z-50" id="navigation">
-            <nav className="bg-black py-1">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-black" id="navigation">
+            <nav className=" bg-transparent py-1">
                 <div className="container mx-auto">
                     <div className="flex justify-between items-center">
                         <a href="/" className="text-white text-xl font-bold py-2">Campbell Frost</a>
