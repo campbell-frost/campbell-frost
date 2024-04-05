@@ -1,6 +1,16 @@
-This is my personal project created with [`Next.js`](https://nextjs.org/) and [`Tailwind`](https://tailwindcss.com/)
+This is my personal site built   with [`Next.js`](https://nextjs.org/) and [`Tailwind`](https://tailwindcss.com/)
 
 ## Getting Started
+
+### Installation 
+
+Clone the repository with 
+
+```bash
+git clone https://github.com/campbell-frost/campbell-frost-next
+```
+
+### Running the site
 
 After cloning, run the following command to start the dev server.
 
