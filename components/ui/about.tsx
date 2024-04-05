@@ -11,14 +11,14 @@ export default function About() {
 
                 <div className="w-full md:w-1/2 mb-10 md:mb-0">
                     <CardItem
-                        translateZ="50"
+                        translateZ="100"
                         className="text-xl font-bold text-neutral-600 dark:text-white"
                     >
                         Hi, I'm Campbell
                     </CardItem>
                     <CardItem
                         as="p"
-                        translateZ="60"
+                        translateZ="150"
                         className="text-neutral-500 text-sm  mt-2 dark:text-neutral-300"
                     >
                         <h1 className="text-white text-6xl font-bold mb-10 leading-tight">
@@ -26,7 +26,7 @@ export default function About() {
                         </h1>
                     </CardItem>
                     <CardItem
-                        translateZ="50"
+                        translateZ="100"
                         className="text-white text-lg font-semibold"
                     >
 
@@ -34,7 +34,7 @@ export default function About() {
                     </CardItem>
                 </div>
                 <div className="w-full md:w-1/3">
-                    <CardItem translateZ="100" className="w-full mt-4">
+                    <CardItem translateZ="180" className="w-full mt-4">
                         <Image
                             src="/images/me_rock.png"
                             height="1000"
