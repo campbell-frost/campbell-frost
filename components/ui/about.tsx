@@ -1,5 +1,6 @@
 import { Highlight } from "@/components/ui/hero-highlight";
-
+import { CardContainer } from "./3d-card";
+import { MeCard } from "./me-card";
 export default function About() {
     return (
         <div className="container mx-auto px-8">
@@ -16,7 +17,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 ">
-                    <img src="./images/me_rock.png" className="w-full border-radius" alt="Picture of Campbell Frost" />
+                    <MeCard />
                 </div>
             </div>
 
