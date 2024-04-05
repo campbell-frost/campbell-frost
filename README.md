@@ -1,4 +1,4 @@
-This is my personal project created with [`Next.js`](https://nextjs.org/) and ['Tailwind'](https://tailwindcss.com/).
+This is my personal project created with [`Next.js`](https://nextjs.org/) and [`Tailwind`](https://tailwindcss.com/)
 
 ## Getting Started
 
