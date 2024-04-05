@@ -57,30 +57,30 @@ const TechComponent = () => {
 
     return (
         <div className="container pt-5">
-            
-            <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-4 border border-white border-opacity-20 rounded-lg p-8   ">
+
+            <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-4">
                 {techList.map((tech, index) => (
                     <CardContainer key={index}>
-                        <CardBody className='text-white bg-black border border-white border-opacity-20 rounded-lg'>
-                            <div className="bg-black p-4 mx-9 rounded-lg relative flex flex-col justify-center items-center"> 
+                        <CardBody  className='text-white border bg-black border-white border-opacity-20 rounded-lg'>
+                            <div className=" p-4 mx-9 rounded-lg relative flex flex-col justify-center items-center">
                                 <CardItem
                                     translateZ="250"
-                                    className="mb-4 " 
+
                                 >
                                     <img
                                         className="tech-icon w-48 h-48 object-contain"
                                         src={tech.image}
                                         alt={`Tech ${index}`}
-                                        
+
                                     />
-                                    <div className="absolute  bg-black opacity-0 rounded-lg"></div>
+                                    <div className="absolute opacity-0 rounded-lg"></div>
                                 </CardItem>
                                 <CardItem
-                                    translateZ="100"
+                                    translateZ="200"
                                     className="text-center"
                                 >
-                                    <div className="p-4 rounded-lg" style={{ transform: 'translateZ(30px)' }}> {/* Adjust the z-transform for the text */}
-                                        <p className="text-white">{tech.text}</p>
+                                    <div className="p-4 text-xl ">
+                                        <h1 className="text-white">{tech.text}</h1>
                                     </div>
                                 </CardItem>
                             </div>
