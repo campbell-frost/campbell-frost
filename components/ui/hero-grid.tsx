@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
 
-export const HeroHighlight = ({
+export const HeroGrid = ({
     children,
     className,
     showGradient = true,
@@ -36,20 +36,20 @@ export const HeroHighlight = ({
             )}
             onMouseMove={handleMouseMove}
         >
-            <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
+            <div className="absolute inset-0 bg-grid-neutral-300 dark:bg-grid-neutral-800  pointer-events-none" />
             <motion.div
-                className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+                className="pointer-events-none bg-grid-indigo-500 dark:bg-grid-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
                 style={{
                     WebkitMaskImage: useMotionTemplate`
             radial-gradient(
-              300px circle at ${mouseX}px ${mouseY}px,
+              400px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
           `,
                     maskImage: useMotionTemplate`
             radial-gradient(
-              300px circle at ${mouseX}px ${mouseY}px,
+              400px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
