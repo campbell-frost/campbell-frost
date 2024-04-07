@@ -18,10 +18,12 @@ export const CardContainer = ({
     children,
     className,
     containerClassName,
+    divisiorValue,
 }: {
     children?: React.ReactNode;
     className?: string;
     containerClassName?: string;
+    divisiorValue: number
 }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -30,8 +32,8 @@ export const CardContainer = ({
         if (!containerRef.current) return;
         const { left, top, width, height } =
             containerRef.current.getBoundingClientRect();
-        const x = (e.clientX - left - width / 2) / 200;
-        const y = -(e.clientY - top - height / 2) / 200;
+        const x = (e.clientX - left - width / 2) / divisiorValue;
+        const y = -(e.clientY - top - height / 2) / divisiorValue;
 
         containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
     };
@@ -50,7 +52,7 @@ export const CardContainer = ({
         <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
             <div
                 className={cn(
-                    "pb-20 items-center justify-center",
+                    "items-center justify-center",
                     containerClassName
                 )}
                 style={{

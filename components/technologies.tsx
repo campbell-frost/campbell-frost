@@ -56,16 +56,15 @@ const TechComponent = () => {
 
 
     return (
-        <div className="container pt-5">
+        <div className=" py-20">
 
-            <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-16">
                 {techList.map((tech, index) => (
-                    <CardContainer key={index}>
+                    <CardContainer key={index} divisiorValue={25}>
                         <CardBody  className='text-white border bg-black border-white border-opacity-20 rounded-lg'>
-                            <div className=" p-4 mx-9 rounded-lg relative flex flex-col justify-center items-center">
+                            <div className=" p-4 mx-16 rounded-lg relative flex flex-col justify-center items-center">
                                 <CardItem
                                     translateZ="250"
-
                                 >
                                     <img
                                         className="tech-icon w-48 h-48 object-contain"
@@ -76,7 +75,7 @@ const TechComponent = () => {
                                     <div className="absolute opacity-0 rounded-lg"></div>
                                 </CardItem>
                                 <CardItem
-                                    translateZ="200"
+                                    translateZ="300"
                                     className="text-center"
                                 >
                                     <div className="p-4 text-xl ">
