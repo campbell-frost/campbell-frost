@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { CardBody, CardContainer, CardItem } from './ui/3d-card';
 
@@ -16,8 +17,8 @@ const TechComponent = () => {
             text: "Vue.js"
         },
         {
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
-            text: "Azure"
+            image: "https://seekicon.com/free-icon-download/c-sharp_1.png",
+            text: "C#"
         },
         {
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1024px-Microsoft_.NET_logo.svg.png",
@@ -28,20 +29,20 @@ const TechComponent = () => {
             text: "Next.js"
         },
         {
-            image: "https://seekicon.com/free-icon-download/c-sharp_1.png",
-            text: "C#"
+            image: "./images/pngegg.png",
+            text: "SQL"
         },
         {
-            image: "./images/pngegg.png",
-            text: "sql"
-        }
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
+            text: "Azure"
+        },
 
 
     ];
 
 
     return (
-        <div className=" py-20 mb-100">
+        <div className=" py-20">
 
             <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-16 max-h-90 max-w-90">
                 {techList.map((tech, index) => (
@@ -54,7 +55,7 @@ const TechComponent = () => {
                                     <img
                                         className="tech-icon object-contain rounded"
                                         src={tech.image}
-                                        alt={`Tech ${index}`}
+                                        alt={tech.text}
                                     />
                                     <div className="absolute opacity-0 rounded-lg"></div>
                                 </CardItem>

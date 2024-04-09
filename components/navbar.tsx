@@ -18,13 +18,13 @@ const Navbar = () => {
                         <a href="/" className="text-white text-xl font-bold py-2">Campbell Frost</a>
                         <DropdownMenu>
                             <DropdownMenuTrigger>
-                                <button
+                                <a
                                     className="block lg:hidden focus:outline-none"
                                     type="button"
                                     aria-label="Toggle navigation"
                                 >
                                     <span className="text-white text-3xl">&#8801;</span>
-                                </button>
+                                </a>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="bg-black mr-7 border-none">
                                 <div className="text-white bg-black border border-white border-opacity-20 rounded-lg ">

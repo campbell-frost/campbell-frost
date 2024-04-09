@@ -1,7 +1,6 @@
 'use client'
-import React, { useState } from 'react';
-import { CardContainer, CardItem } from './ui/3d-card';
-
+import React from 'react';
+import { CardBody, CardContainer, CardItem } from './ui/3d-card';
 
 const Projects = () => {
     const projects = [
@@ -28,25 +27,30 @@ const Projects = () => {
         },
     ];
 
-
-
     return (
-        <div className="grid grid-cols-2 text-white gap-16">
-            {projects.map(project => (
-                <CardContainer divisiorValue={25}>
-
-                    <div key={project.id}>
-                        <CardItem className='text-white border bg-black border-white border-opacity-20 rounded-lg'>
-                            <div className="p-4">
-                                <h3 className="text-white text-lg font-bold">{project.title}</h3>
-                                <p className="text-gray-300">{project.company}</p>
-                                <img src={project.image} alt={project.title} className="w-full mt-4" />
-                                <p className="text-gray-300 mt-4">{project.description}</p>
+        <div className="py-30">
+            <div className="grid grid-cols-1 lg:grid-cols-2 text-white gap-16">
+                {projects.map(project => (
+                    <CardContainer divisiorValue={50} key={project.id}>
+                        <CardBody>
+                            <div className="text-white border bg-black border-white border-opacity-20 rounded-lg p-7">
+                                <CardItem translateZ={40}>
+                                    <h3 className="text-white text-lg font-bold">{project.title}</h3>
+                                </CardItem>
+                                <CardItem translateZ={50}>
+                                    <p className="text-gray-300">{project.company}</p>
+                                </CardItem>
+                                <CardItem translateZ={80}>
+                                    <img src={project.image} alt={project.title} className="w-full mt-4" />
+                                </CardItem>
+                                <CardItem translateZ={40}>
+                                    <p className="text-gray-300 mt-4">{project.description}</p>
+                                </CardItem>
                             </div>
-                        </CardItem>
-                    </div>
-                </CardContainer>
-            ))}
+                        </CardBody>
+                    </CardContainer>
+                ))}
+            </div>
         </div>
     );
 };
