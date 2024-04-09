@@ -22,7 +22,7 @@ export const TracingBeam = ({
     }, []);
 
     const y1 = useSpring(
-        useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 4500]),
+        useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 1300]),
         {
             stiffness: 500,
             damping: 90,
@@ -48,7 +48,7 @@ export const TracingBeam = ({
                     aria-hidden="true"
                 >
                     <motion.path
-                        d={`M 1 0V -39 l 18 25 V ${svgHeight * 0.9} l -18 24V ${svgHeight}`}
+                        d={`M 1 0V -29 l 18 25 V ${svgHeight * 0.9} l -18 24V ${svgHeight}`}
                         fill="none"
                         stroke="url(#gradient)"
                         strokeWidth="1.25"
