@@ -28,7 +28,24 @@ export const CardContainer = ({
     const containerRef = useRef<HTMLDivElement>(null);
     const [isMouseEntered, setIsMouseEntered] = useState(false);
 
-    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+
+    const debounce = <T extends any[]>(
+        fn: (...args: T) => void,
+        delay: number
+    ): ((...args: T) => void) => {
+        let timeoutId: ReturnType<typeof setTimeout> | null = null;
+
+        return (...args: T) => {
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+            timeoutId = setTimeout(() => {
+                fn.apply(this, args);
+            }, delay);
+        };
+    };
+
+    const handleMouseMove = debounce((e: React.MouseEvent<HTMLDivElement>) => {
         if (!containerRef.current) return;
         const { left, top, width, height } =
             containerRef.current.getBoundingClientRect();
@@ -36,7 +53,7 @@ export const CardContainer = ({
         const y = -(e.clientY - top - height / 2) / divisiorValue;
 
         containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
-    };
+    }, 1);
 
     const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
         setIsMouseEntered(true);
