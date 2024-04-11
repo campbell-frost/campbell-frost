@@ -4,13 +4,13 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import Projects from '@/components/projects';
 import Technologies from '@/components/technologies';
-import { HeroGrid } from '@/components/ui/hero-grid';
+import { HeroDots } from '@/components/ui/hero-dots';
 import { TracingBeam } from '@/components/ui/tracing-beam';
 
 export default function Home() {
   return (
     <main>
-      <HeroGrid>
+      <HeroDots>
         <TracingBeam>
           <Navbar />
           <div className="container">
@@ -19,7 +19,7 @@ export default function Home() {
             <Projects />
           </div>
         </TracingBeam>
-      </HeroGrid>
+      </HeroDots>
       <Footer />
     </main>
   );

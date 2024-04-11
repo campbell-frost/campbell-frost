@@ -1,4 +1,4 @@
-import { Highlight } from "@/components/ui/hero-grid";
+import { Highlight } from "@/components/ui/hero-dots";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 import Image from "next/image";
