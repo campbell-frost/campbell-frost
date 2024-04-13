@@ -4,11 +4,12 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
+
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+import ContactMeButton from './ui/contact-me';
+import InfoButton from './ui/info-button';
 const Navbar = () => {
     return (
         <div className="fixed top-0 left-0 right-0 z-50 bg-black" id="navigation">
@@ -45,38 +46,10 @@ const Navbar = () => {
                         </DropdownMenu>
                         <div className="hidden lg:flex lg:flex-grow lg:items-center lg:w-auto lg:justify-end">
                             <div className="lg:flex lg:flex-row lg:ml-auto text-white text-lg">
-                                <a
-                                    href="https://github.com/campbell-frost"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="nav-link mx-3"
-                                >
-                                    Github
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/campbell-frost-39656a207/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="nav-link mx-3"
-                                >
-                                    LinkedIn
-                                </a>
-                                <a
-                                    href="https://www.instagram.com/campbell.frost/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="nav-link mx-3"
-                                >
-                                    Instagram
-                                </a>
-                                <a
-                                    href="mailto:campbellsfrost@gmail.com"
-                                    className="btn-layered offset square mx-3"
-                                    role="button"
-                                    aria-pressed="true"
-                                >
-                                    Email Me
-                                </a>
+                                <InfoButton name='Github' link="https://github.com/campbell-frost" />
+                                <InfoButton name='LinkedIn' link="https://www.linkedin.com/in/campbell-frost-39656a207/" />
+                                <InfoButton name='Instagram' link="https://www.instagram.com/campbell.frost/" />
+                                <ContactMeButton />
                             </div>
                         </div>
                     </div>

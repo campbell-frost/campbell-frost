@@ -25,7 +25,9 @@ export default function RootLayout({
         fontSans.variable
       )}>
         <ThemeProvider
-          attribute="class">
+          attribute="class"
+          defaultTheme="dark"
+        >
 
           {children}
         </ThemeProvider>

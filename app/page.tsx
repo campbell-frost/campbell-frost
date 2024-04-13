@@ -6,21 +6,26 @@ import Projects from '@/components/projects';
 import Technologies from '@/components/technologies';
 import { HeroDots } from '@/components/ui/hero-dots';
 import { TracingBeam } from '@/components/ui/tracing-beam';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export default function Home() {
   return (
-    <main>
-      <HeroDots>
-        <TracingBeam>
-          <Navbar />
-          <div className="container">
-            <About />
-            <Technologies />
-            <Projects />
-          </div>
-        </TracingBeam>
-      </HeroDots>
-      <Footer />
-    </main>
+    <ThemeProvider>
+
+      <main>
+        <HeroDots>
+          <TracingBeam>
+            <Navbar />
+            <div className="container">
+              <About />
+              <Technologies />
+              <Projects />
+
+            </div>
+          </TracingBeam>
+        </HeroDots>
+        <Footer />
+      </main>
+    </ThemeProvider>
   );
 }

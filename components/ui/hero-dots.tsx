@@ -31,7 +31,7 @@ export const HeroDots = ({
     return (
         <div
             className={cn(
-                "relative flex items-center justify-center w-full group",
+                "relative flex items-center justify-center w-full group bg-black",
                 containerClassName
             )}
             onMouseMove={handleMouseMove}

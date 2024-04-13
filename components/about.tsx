@@ -12,7 +12,7 @@ export default function About() {
                 <div className="w-full md:w-1/2 mb-10 md:mb-0">
                     <CardItem
                         translateZ="40"
-                        className="text-xl font-bold text-neutral-600 dark:text-white"
+                        className="text-xl font-bold text-white"
                     >
                         Hi, I'm Campbell
                     </CardItem>
