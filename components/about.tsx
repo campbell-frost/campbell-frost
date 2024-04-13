@@ -4,6 +4,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 import Image from "next/image";
 import { BackgroundGradient } from "./ui/background-gradient";
+import { HeroGrid } from "./ui/hero-grid";
 
 export default function About() {
     return (
@@ -11,7 +12,7 @@ export default function About() {
         <CardContainer divisiorValue={200} className=" mt-20">
 
             <BackgroundGradient>
-                <HeroDots dots="grid">
+                <HeroGrid>
                     <CardBody className="flex flex-wrap items-center justify-between dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border">
 
                         <div className="w-full md:w-1/2 mb-10 md:mb-0">
@@ -47,7 +48,7 @@ export default function About() {
                             </CardItem>
                         </div>
                     </CardBody>
-                </HeroDots>
+                </HeroGrid>
             </BackgroundGradient>
         </CardContainer>
 
