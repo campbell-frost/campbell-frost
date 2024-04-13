@@ -13,7 +13,7 @@ export default function Home() {
     <ThemeProvider>
 
       <main>
-        <HeroDots>
+        <HeroDots dots='dot-thick'>
           <TracingBeam>
             <Navbar />
             <div className="container">
