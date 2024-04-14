@@ -23,7 +23,7 @@ const Projects = () => {
             title: 'Bossy Books',
             company: 'Francis Marion University',
             image: './images/bossybooks.png',
-            description: 'A full stack web app made with Next.js and Postgres hosted on Vercel that allows small businesses to manage customer and invoice information.',
+            description: 'A full stack web app made as my second Capstone with Next.js and Postgres hosted on Vercel that allows small businesses to manage customer and invoice information.',
         },
     ];
 
