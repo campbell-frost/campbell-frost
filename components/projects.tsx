@@ -9,7 +9,7 @@ const Projects = () => {
             title: 'Sign Me In',
             company: 'Florence Darlingon Technical College',
             image: './images/sign-me-in.png',
-            description: 'A full stack web app made during my Capstone designed for the Florence Darlington Technical College to aid tutors in the Math Hub sign students in more efficiently, and to give managers the ability to generate reports, view graphs, and edit employee and account info.The project was developed using Blazor on .NET 8, Azure SQL, VS- Code, and GitHub in an Agile / Scrum environment.',
+            description: 'A full stack web app made during my Capstone designed for the Florence Darlington Technical College to aid tutors in the Math Hub sign students in more efficiently, and to give managers the ability to generate reports, view graphs, and edit employee and account info.  The project was developed using Blazor on .NET 8, Azure SQL, VS- Code, and GitHub in an Agile / Scrum environment.',
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ const Projects = () => {
             title: 'Bossy Books',
             company: 'Francis Marion University',
             image: './images/bossybooks.png',
-            description: 'A full stack web app made with Next.js and Postgres hosted on Vercel   that allows small businesses to manage customer and invoice information.',
+            description: 'A full stack web app made with Next.js and Postgres hosted on Vercel that allows small businesses to manage customer and invoice information.',
         },
     ];
 
