@@ -16,7 +16,7 @@ const Navbar = () => {
             <nav className=" bg-transparent py-1">
                 <div className="container mx-auto">
                     <div className="flex justify-between items-center">
-                        <a href="/" className="text-white text-xl font-bold py-2">Campbell Frost</a>
+                        <InfoButton name='Campbell Frost' link="http://campbell-frost-next.vercel.app" bold={true}/>
                         <DropdownMenu>
                             <DropdownMenuTrigger>
                                 <a
@@ -46,9 +46,9 @@ const Navbar = () => {
                         </DropdownMenu>
                         <div className="hidden lg:flex lg:flex-grow lg:items-center lg:w-auto lg:justify-end">
                             <div className="lg:flex lg:flex-row lg:ml-auto text-white text-lg">
-                                <InfoButton name='Github' link="https://github.com/campbell-frost" />
-                                <InfoButton name='LinkedIn' link="https://www.linkedin.com/in/campbell-frost-39656a207/" />
-                                <InfoButton name='Instagram' link="https://www.instagram.com/campbell.frost/" />
+                                <InfoButton name='Github' link="https://github.com/campbell-frost" bold={false} />
+                                <InfoButton name='LinkedIn' link="https://www.linkedin.com/in/campbell-frost-39656a207/" bold={false} />
+                                <InfoButton name='Instagram' link="https://www.instagram.com/campbell.frost/" bold={false} />
                                 <ContactMeButton />
                             </div>
                         </div>
