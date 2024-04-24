@@ -8,13 +8,10 @@ import { HeroGrid } from "./ui/hero-grid";
 
 export default function About() {
     return (
-
         <CardContainer divisiorValue={200} className=" mt-20">
-
             <BackgroundGradient>
                 <HeroGrid>
                     <CardBody className="flex flex-wrap items-center justify-between dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border">
-
                         <div className="w-full md:w-1/2 mb-10 md:mb-0">
                             <CardItem
                                 translateZ="40"

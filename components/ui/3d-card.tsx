@@ -53,7 +53,7 @@ export const CardContainer = ({
             const y = -(e.clientY - top - height / 2) / divisiorValue;
 
         containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
-    }, 1);
+    }, .1);
 
     const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
         setIsMouseEntered(true);

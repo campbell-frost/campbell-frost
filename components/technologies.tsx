@@ -18,6 +18,10 @@ const TechComponent = () => {
             text: "Vue.js"
         },
         {
+            image: "./images/svelte.png",
+            text: "Svelte"
+        },
+        {
             image: "https://seekicon.com/free-icon-download/c-sharp_1.png",
             text: "C#"
         },
@@ -30,8 +34,12 @@ const TechComponent = () => {
             text: "Next.js"
         },
         {
-            image: "./images/pngegg.png",
-            text: "SQL"
+            image: "https://miro.medium.com/v2/resize:fit:300/1*R4c8lHBHuH5qyqOtZb3h-w.png",
+            text: "Firebase"
+        },
+        {
+            image: "https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/supabase-TAiY.png",
+            text: "Supabase"
         },
         {
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
@@ -41,7 +49,8 @@ const TechComponent = () => {
 
     return (
         <div className=" py-20">
-            <div className="grid grid-cols-2 text-white md:grid-cols-8 gap-16 max-h-90 max-w-90">
+            <h1 className=" font-bold text-3xl mb-10">Technologies I Use</h1>
+            <div className="grid grid-cols-2 text-white md:grid-cols-5 gap-16 max-h-90 max-w-90">
                 {techList.map((tech, index) => (
                     <CardContainer divisiorValue={1000}>
                         <CardBody>
@@ -56,8 +65,6 @@ const TechComponent = () => {
                                         src={tech.image}
                                         alt={tech.text}
                                     />
-                                    {tech.text}
-
                                     <div className="absolute opacity-0 rounded-lg"></div>
                                 </div>
                             </CardItem>

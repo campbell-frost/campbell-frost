@@ -11,18 +11,14 @@ import { ThemeProvider } from '@/components/theme-provider';
 export default function Home() {
   return (
     <ThemeProvider>
-
       <main>
         <HeroDots>
-          <TracingBeam>
             <Navbar />
             <div className="container">
               <About />
               <Technologies />
               <Projects />
-
             </div>
-          </TracingBeam>
         </HeroDots>
         <Footer />
       </main>
