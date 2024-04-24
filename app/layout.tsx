@@ -8,7 +8,8 @@ import { Analytics } from "@vercel/analytics/react"
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
+
 export const metadata: Metadata = {
   title: "Campbell Frost",
   description: "My Personal Site  ",
@@ -20,7 +21,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
     <html lang="en">
       <body className={cn(
         " bg-black font-sans antialiased",
@@ -33,7 +33,6 @@ export default function RootLayout({
           {children}
           <Analytics />
         </ThemeProvider>
-
       </body>
     </html>
   );
