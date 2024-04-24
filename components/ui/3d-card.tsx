@@ -49,14 +49,9 @@ export const CardContainer = ({
         if (!containerRef.current) return;
         const { left, top, width, height } =
             containerRef.current.getBoundingClientRect();
-<<<<<<< Updated upstream
-        const x = (e.clientX - left - width / 2) / divisiorValue;
-        const y = -(e.clientY - top - height / 2) / divisiorValue;
+            const x = (e.clientX - left - width / 2) / divisiorValue;
+            const y = -(e.clientY - top - height / 2) / divisiorValue;
 
-=======
-        const x = (e.clientX - left - width / 2) / 200;
-        const y = (e.clientY - top - height / 2) / 200;
->>>>>>> Stashed changes
         containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
     }, 1);
 
