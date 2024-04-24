@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { CardBody, CardContainer, CardItem } from './ui/3d-card';
+import { Icon } from './ui/icon';
 
 const TechComponent = () => {
     const techList = [
@@ -43,23 +44,28 @@ const TechComponent = () => {
 
     return (
         <div className=" py-20">
-
-            <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-16 max-h-90 max-w-90">
+            <div className="grid grid-cols-2 text-white md:grid-cols-8 gap-16 max-h-90 max-w-90">
                 {techList.map((tech, index) => (
-                    <CardContainer key={index} divisiorValue={25}>
-                        <CardBody className='text-white border bg-black border-white border-opacity-20 rounded-lg'>
-                            <div className=" p-4 m-8 rounded-lg relative flex flex-col justify-center items-center">
-                                <CardItem
-                                    translateZ="250"
-                                >
+                    <CardContainer divisiorValue={1000}>
+                        <CardBody>
+                            <CardItem translateZ={50}>
+                                <div key={index} className="border bg-black border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative">
+                                    <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
+                                    <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
+                                    <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
+                                    <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+
+
                                     <img
                                         className="tech-icon object-contain rounded"
                                         src={tech.image}
                                         alt={tech.text}
                                     />
+                                    {tech.text}
+
                                     <div className="absolute opacity-0 rounded-lg"></div>
-                                </CardItem>
-                            </div>
+                                </div>
+                            </CardItem>
                         </CardBody>
                     </CardContainer>
                 ))}
