@@ -41,7 +41,6 @@ const TechComponent = () => {
 
     ];
 
-
     return (
         <div className=" py-20">
             <div className="grid grid-cols-2 text-white md:grid-cols-8 gap-16 max-h-90 max-w-90">
@@ -54,8 +53,6 @@ const TechComponent = () => {
                                     <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
                                     <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
                                     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-
-
                                     <img
                                         className="tech-icon object-contain rounded"
                                         src={tech.image}
