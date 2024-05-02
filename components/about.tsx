@@ -1,16 +1,15 @@
 'use client'
-import { HeroDots, Highlight } from "@/components/ui/hero-dots";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-
 import Image from "next/image";
-import { BackgroundGradient } from "./ui/background-gradient";
+
+import { Highlight } from "@/components/ui/hero-dots";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { HeroGrid } from "./ui/hero-grid";
 
 export default function About() {
     return (
-        <CardContainer divisiorValue={200} className=" mt-20">
-            <BackgroundGradient>
-                <HeroGrid>
+        <div className="mt-20">
+            <HeroGrid>
+                <CardContainer divisiorValue={200} className="">
                     <CardBody className="flex flex-wrap items-center justify-between dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto  h-auto rounded-xl p-6 border">
                         <div className="w-full md:w-1/2 mb-10 md:mb-0">
                             <CardItem
@@ -45,9 +44,8 @@ export default function About() {
                             </CardItem>
                         </div>
                     </CardBody>
-                </HeroGrid>
-            </BackgroundGradient>
-        </CardContainer>
-
+                </CardContainer>
+            </HeroGrid>
+        </div>
     );
 }
