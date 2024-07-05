@@ -22,7 +22,7 @@ const TechComponent = () => {
             text: "Svelte"
         },
         {
-            image: "https://seekicon.com/free-icon-download/c-sharp_1.png",
+            image: "./images/csharp.png",
             text: "C#"
         },
         {
