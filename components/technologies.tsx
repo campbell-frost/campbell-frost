@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
+import IconCloud from "./magicui/icon-cloud";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import { Icon } from "./ui/icon";
 
 const TechComponent = () => {
   const techList = [
@@ -57,31 +57,13 @@ const TechComponent = () => {
   return (
     <div className=" py-20">
       <h1 className=" font-bold text-3xl mb-10">Technologies I Use</h1>
-      <div className="grid grid-cols-2 text-white md:grid-cols-5 gap-16 max-h-90 max-w-90">
-        {techList.map((tech, index) => (
-          <CardContainer divisiorValue={1000}>
-            <CardBody>
-              <CardItem translateZ={50}>
-                <div
-                  key={index}
-                  className="border bg-black border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative"
-                >
-                  <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-                  <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-                  <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-                  <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-                  <img
-                    className="tech-icon object-contain rounded"
-                    src={tech.image}
-                    alt={tech.text}
-                  />
-                  <div className="absolute opacity-0 rounded-lg"></div>
-                </div>
-              </CardItem>
-            </CardBody>
-          </CardContainer>
-        ))}
-      </div>
+      <CardContainer divisiorValue={25}>
+        <CardBody>
+          <CardItem>
+          <IconCloud icons={techList} />
+          </CardItem>
+        </CardBody>
+      </CardContainer>
     </div>
   );
 };
