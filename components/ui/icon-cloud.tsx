@@ -46,7 +46,6 @@ export const cloudProps: Omit<ICloud, "children"> = {
 };
 
 export default function IconCloud({ icons }: DynamicCloudProps) {
-  const { theme } = useTheme();
 
   const renderedIcons = useMemo(() => {
     return icons.map((icon, index) => (
@@ -64,6 +63,8 @@ export default function IconCloud({ icons }: DynamicCloudProps) {
             width: '42px',
             height: '42px',
             objectFit: 'contain',
+            maxWidth: '42px',
+            maxHeight: '42px',
           }}
         />
       </a>
