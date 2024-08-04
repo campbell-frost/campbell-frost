@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import IconCloud from "./magicui/icon-cloud";
+import IconCloud from "./ui/icon-cloud";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 const TechComponent = () => {
@@ -48,6 +48,46 @@ const TechComponent = () => {
       text: "Supabase",
     },
     {
+      image: "./images/Typescript_logo_2020.svg.png",
+      text: "TypeScript",
+    },
+    {
+      image: "./images/vscode-icon.png",
+      text: "VSCode",
+    },
+    {
+      image: "./images/Git_icon.png",
+      text: "Git",
+    },
+    {
+      image: "./images/azure-devops.svg",
+      text: "Azure Devops",
+    },
+    {
+      image: "./images/Vercel_w_trans.png",
+      text: "Vercel",
+    },
+    {
+      image: "./images/Go-Logo_Blue.png",
+      text: "Go",
+    },
+    {
+      image: "./images/java-icon.png",
+      text: "Java",
+    },
+    {
+      image: "./images/swift-icon.png",
+      text: "Swift",
+    },
+    {
+      image: "./images/node-icon.png",
+      text: "Node",
+    },
+    {
+      image: "./images/kotlin-icon.svg",
+      text: "Kotlin",
+    },
+    {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
       text: "Azure",
@@ -60,7 +100,7 @@ const TechComponent = () => {
       <CardContainer divisiorValue={25}>
         <CardBody>
           <CardItem>
-          <IconCloud icons={techList} />
+            <IconCloud icons={techList} />
           </CardItem>
         </CardBody>
       </CardContainer>
